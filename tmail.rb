@@ -7,8 +7,8 @@ require 'fileutils'
 require 'tmail'
 # 首先登录imap服务器，如果是gmail的话，需要加上ssl的支持
 number_of_retries = 0
-username = 'ludio333'
-password = 'Ludio333!!!'
+username = ''
+password = ''
 begin
 	@server = Net::IMAP.new('imap.gmail.com', 993, true)
 	rescue Errno::ECONNREFUSED, Errno::ETIMEDOUT, SocketError => e
