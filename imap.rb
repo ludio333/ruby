@@ -7,7 +7,7 @@ require 'base64'
 require 'mail'
 #require 'tmail'
 #imap = Net::IMAP.new('imap.gmail.com', 993, true)
-#imap.login('ludio333', 'Ludio333!!!')
+#imap.login('', '')
 #imap.select('INBOX')
 #mailIds = imap.search(['UNSEEN'])
 #mailIds.each do |id|
@@ -19,8 +19,8 @@ require 'mail'
 #imap.disconnect()
 
 imap = Net::IMAP.new('imap.gmail.com', 993, true)
-#imap.authenticate('LOGIN', 'ludio333', 'Ludio333!!!')
-imap.login('ludio333', 'Ludio333!!!')
+#imap.authenticate('LOGIN', '', '')
+imap.login('', '')
 imap.select('INBOX')
 imap.search(["UNSEEN"]).each do |message_id|
 #envelope = imap.fetch(message_id, "BODYSTRUCTURE")[0].attr["BODYSTRUCTURE"]
